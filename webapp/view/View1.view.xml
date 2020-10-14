@@ -1,0 +1,51 @@
+<mvc:View controllerName="com.cpro.mock.test.MockServer2.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Table id="EducationTable" inset="false" items="{Education>/EducationSet}" mode="MultiSelect">
+							<headerToolbar>
+								<Toolbar>
+									<Title text="{i18n>View1.TableTitle}" level="H2"/>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column width="12em">
+									<Text text="{Education>/EducationSet/LaufendeNummer/#@sap:label}"/>
+								</Column>
+								<Column minScreenWidth="Tablet" demandPopin="true">
+									<Text text="{Education>/EducationSet/Beschreibung/#@sap:label}"/>
+								</Column>
+								<Column minScreenWidth="Desktop" demandPopin="true">
+									<Text text="{Education>/EducationSet/Erstelldatum/#@sap:label}"/>
+								</Column>
+								<Column minScreenWidth="Desktop" demandPopin="true">
+									<Text text="{Education>/EducationSet/Erfassungszeit/#@sap:label}"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem >
+									<cells>
+										<ObjectIdentifier title="{Education>LaufendeNummer}"/>
+										<Input value="{Education>Beschreibung}"/>
+										<Text text="{ path: 'Education>Erstelldatum', type: 'sap.ui.model.odata.type.Date' }"/>
+										<Text text="{ path: 'Education>Erfassungszeit', type: 'sap.ui.model.odata.type.Time' }"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+					<footer>
+						<Toolbar width="100%" id="__toolbar2">
+							<content>
+								<ToolbarSpacer/>
+								<Button text="{i18n>View1.UpdateButton}" press="onUpdateButtonPress" width="100px" id="__button2"/>
+							</content>
+						</Toolbar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
