@@ -1,0 +1,23 @@
+[
+	{
+		"Beschreibung": "content",
+		"Erfassungszeit": "PT13H06M57S",
+		"Erstelldatum": "/Date(1595635200000)/",
+		"LaufendeNummer": "0100-20"
+	}, {
+		"Beschreibung": "content2",
+		"Erfassungszeit": "PT13H09M41S",
+		"Erstelldatum": "/Date(1595635200000)/",
+		"LaufendeNummer": "0101-20"
+	}, {
+		"Beschreibung": "content3",
+		"Erfassungszeit": "PT13H09M59S",
+		"Erstelldatum": "/Date(1595635200000)/",
+		"LaufendeNummer": "0102-20"
+	}, {
+		"Beschreibung": "content4",
+		"Erfassungszeit": "PT13H28M10S",
+		"Erstelldatum": "/Date(1595635200000)/",
+		"LaufendeNummer": "0103-20"
+	}
+]
